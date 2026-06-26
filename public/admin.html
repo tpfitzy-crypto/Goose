@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weekly Lines Admin</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin portal</p>
+          <h1>Pool Control</h1>
+        </div>
+        <div class="session">
+          <a class="ghost-link" href="/">Participant site</a>
+          <span id="sessionName"></span>
+          <button id="logoutBtn" class="ghost hidden">Log out</button>
+        </div>
+      </header>
+
+      <section id="authView" class="auth-grid">
+        <form id="loginForm" class="panel">
+          <h2>Admin log in</h2>
+          <label>Email <input name="email" type="email" value="admin@example.com" required></label>
+          <label>Password <input name="password" type="password" value="admin123" required></label>
+          <button type="submit">Enter portal</button>
+        </form>
+      </section>
+
+      <div id="message" class="message hidden"></div>
+
+      <section id="adminView" class="hidden">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">Current week</p>
+            <h2 id="weekLabel">Weekly results</h2>
+          </div>
+          <button id="syncOddsBtn" type="button">Sync pregame odds</button>
+        </div>
+
+        <section class="admin-layout">
+          <div>
+            <h2 class="compact-title">Leaderboard</h2>
+            <div id="leaderboard" class="table"></div>
+          </div>
+          <div>
+            <h2 class="compact-title">All picks</h2>
+            <div id="allPicks" class="table"></div>
+          </div>
+          <div>
+            <h2 class="compact-title">Settle events</h2>
+            <div id="openEvents" class="settle-list"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/admin.js" type="module"></script>
+  </body>
+</html>

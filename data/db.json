@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": "u_admin",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "passwordHash": "9bee19a0a7452d15d78c6a3c1ad60b73:c9fb2ec2486913dc6da6ac53b8da9a96599ec100621b6ca986cb2124e34811cf36d10cdbbc2f5f7f84a12df1a9b46c9a75d316958febe93f5a732bf94d035347",
+      "role": "admin",
+      "createdAt": "2026-06-25T23:45:37.940Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "e_mlb_1",
+      "week": "2026-W26",
+      "sport": "baseball",
+      "league": "MLB",
+      "awayTeam": "Boston",
+      "homeTeam": "New York",
+      "startsAt": "2026-06-26T23:00:00.000Z",
+      "market": "moneyline",
+      "awayOdds": "+115",
+      "homeOdds": "-135",
+      "status": "open",
+      "source": "sample"
+    },
+    {
+      "id": "e_mlb_2",
+      "week": "2026-W26",
+      "sport": "baseball",
+      "league": "MLB",
+      "awayTeam": "Seattle",
+      "homeTeam": "Houston",
+      "startsAt": "2026-06-28T00:00:00.000Z",
+      "market": "moneyline",
+      "awayOdds": "-105",
+      "homeOdds": "-115",
+      "status": "open",
+      "source": "sample"
+    },
+    {
+      "id": "e_soc_1",
+      "week": "2026-W26",
+      "sport": "soccer",
+      "league": "MLS",
+      "awayTeam": "Atlanta",
+      "homeTeam": "Miami",
+      "startsAt": "2026-06-28T22:00:00.000Z",
+      "market": "moneyline",
+      "awayOdds": "+210",
+      "homeOdds": "+125",
+      "drawOdds": "+235",
+      "status": "open",
+      "source": "sample"
+    },
+    {
+      "id": "e_soc_2",
+      "week": "2026-W26",
+      "sport": "soccer",
+      "league": "EPL",
+      "awayTeam": "Arsenal",
+      "homeTeam": "Chelsea",
+      "startsAt": "2026-06-29T16:00:00.000Z",
+      "market": "moneyline",
+      "awayOdds": "+145",
+      "homeOdds": "+180",
+      "drawOdds": "+220",
+      "status": "open",
+      "source": "sample"
+    }
+  ],
+  "picks": []
+}

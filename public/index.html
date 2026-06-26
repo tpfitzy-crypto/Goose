@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weekly Lines</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Soccer + baseball pool</p>
+          <h1>Weekly Lines</h1>
+        </div>
+        <div class="session">
+          <span id="sessionName"></span>
+          <button id="logoutBtn" class="ghost hidden">Log out</button>
+        </div>
+      </header>
+
+      <section id="authView" class="auth-grid">
+        <form id="loginForm" class="panel">
+          <h2>Log in</h2>
+          <label>Email <input name="email" type="email" value="admin@example.com" required></label>
+          <label>Password <input name="password" type="password" value="admin123" required></label>
+          <button type="submit">Log in</button>
+        </form>
+        <form id="registerForm" class="panel">
+          <h2>Create account</h2>
+          <label>Name <input name="name" required></label>
+          <label>Email <input name="email" type="email" required></label>
+          <label>Password <input name="password" type="password" minlength="8" required></label>
+          <button type="submit">Join pool</button>
+        </form>
+      </section>
+
+      <section id="appView" class="hidden">
+        <nav class="tabs">
+          <button data-view="board" class="active">Board</button>
+          <button data-view="lines">Lines</button>
+          <button data-view="picks">My picks</button>
+        </nav>
+
+        <div id="message" class="message hidden"></div>
+
+        <section id="board" class="view active">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">Current week</p>
+              <h2>Leaderboard</h2>
+            </div>
+            <strong id="weekLabel"></strong>
+          </div>
+          <div id="leaderboard" class="table"></div>
+        </section>
+
+        <section id="lines" class="view">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">Pregame markets</p>
+              <h2>Available lines</h2>
+            </div>
+          </div>
+          <div id="events" class="event-grid"></div>
+        </section>
+
+        <section id="picks" class="view">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">This week</p>
+              <h2>My picks</h2>
+            </div>
+          </div>
+          <div id="myPicks" class="table"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
